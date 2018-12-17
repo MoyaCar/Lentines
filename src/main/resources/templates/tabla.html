@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hay Tabla!</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<tr>
+				<th>NAME</th>
+				<th>DNI</th>
+				<th>CI</th>
+			</tr>
+		</thead>
+		<tbody th:each="Lentinx : ${listalentines}">
+
+			<tr>
+				<th th:text="${Lentinx.nombre}"></th>
+				<th th:text="${Lentinx.dni}"></th>
+				<th th:text="${Lentinx.CI}"></th>
+			</tr>
+
+		</tbody>
+	</table>
+</body>
+
+
+</html>

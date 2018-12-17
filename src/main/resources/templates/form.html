@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Generador de lentines 9000</title>
+</head>
+<body>
+
+	<form action="#" th:action="@{/formulario/agregar_lentin}" th:object="${nuevo_lentin}" method="post">
+	
+		<h1>Nombre:<input type="text" th:field="*{nombre}"></h1>
+
+		<h1>DNI:<input type="number" th:field="*{dni}"></h1>
+
+		<h1>CI: <input type="number" th:field="*{CI}"></h1>
+
+		<input type="submit" value="Nuevo Lentin">
+
+</form>
+
+</body>
+</html>	
